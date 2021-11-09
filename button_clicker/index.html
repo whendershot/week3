@@ -8,20 +8,23 @@
     <link rel="stylesheet" type="text/css" href="./static/css/style.css">
 </head>
 <body>
-    <div class="navbar">
+    <header class="navbar">
         <h1>Dojonary</h1>
         <input type="text" id="searchbar" placeholder="Search">
-        <button class="btn" id="login">Login</button>
-    </div>
+        <button class="btn" id="login" onclick="login(this);">Login</button>
+    </header>
     <main>
         <ul class="dictionary flex_3">
             <li class="definition">
                 <div class="card">
                     <div class="flex_1 card_left">
-                        <h1>ninja</h1>
+                        <p class="definition_word">ninja</p>
                         <p>noun</p>
                         <p>Plural: ninjas</p>
-                        <button class="likes_button btn"><span class="counter">0</span> Likes</button>
+                        <button class="likes_button btn" onclick="addLike(this);">
+                            <span class="counter">13</span>
+                            likes
+                        </button>
                     </div>
                     <div class="flex_3 card_right">
                         <p>A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a></p>
@@ -31,10 +34,13 @@
             <li class="definition">
                 <div class="card">
                     <div class="flex_1 card_left">
-                        <h1>ninja</h1>
+                        <p class="definition_word">ninja</p>
                         <p>noun</p>
                         <p>Plural: ninjas</p>
-                        <button class="likes_button btn"><span class="counter">0</span> Likes</button>
+                        <button class="likes_button btn" onclick="addLike(this);">
+                            <span class="counter">37</span>
+                            likes
+                        </button>
                     </div>
                     <div class="flex_3 card_right">
                         <p>A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a>-like focus</p>
@@ -44,8 +50,12 @@
         </ul>
         <div class="card flex_1" id="add_definition_card">
             <p>Dojonary is defined by <b>YOU</b></p>
-            <button class="btn" id="add_defintion">Add Definition</button>
+            <button class="btn" id="add_definition" onclick="addDefinition(this);">Add Definition</button>
         </div>
     </main>
+    <footer>
+
+    </footer>
+    <script src="./static/js/dojonary.js"></script>
 </body>
 </html>
