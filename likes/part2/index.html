@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Likes</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <header>
+        <p>Network</p>
+    </header>
+    <main>
+        <p class="block">Your Feed</p>
+        <div id="post-feed-container">
+            <div id="user-avatar-card" class="card flex-1">
+                <img id="user-image" src="./static/images/user-circle.png" alt="user image">
+                <a href="#">Add an avatar</a>
+                <p id="user-name">James Doe</p>
+            </div>
+            <ul id="post-feed" class="flex-4">
+                <li class="card post" id="99">
+                    <header>
+                        <p class="poster-name">Neil M</p>
+                        <div>
+                            <p class="post-likes">9 like(s)</p>
+                            <button class="post-like-button">
+                                Like
+                            </button>
+                        </div>
+                    </header>
+                    <div class="post-text">
+                        I just set up this new discord bot, let me know what you all think. <a href="#">link</a>
+                    </div>
+                </li>
+                <li class="card post" id="23">
+                    <header>
+                        <p class="poster-name">Nichole K</p>
+                        <div>
+                            <p class="post-likes">12 like(s)</p>
+                            <button class="post-like-button">
+                                Like
+                            </button>
+                        </div>
+                    </header>
+                    <div class="post-text">
+                        Just finished my <a href="#">next comic</a>, check it out.
+                    </div>
+                </li>
+                <li class="card post" id="66">
+                    <header>
+                        <p class="poster-name">Jim R</p>
+                        <div>
+                            <p class="post-likes">9 like(s)</p>
+                            <button class="post-like-button">
+                                Like
+                            </button>
+                        </div>
+                    </header>
+                    <div class="post-text">
+                        I can't stop listening to the <a href="#">new albumn</a>.  Who else is liking it?
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
