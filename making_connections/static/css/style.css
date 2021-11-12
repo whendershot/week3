@@ -1,0 +1,172 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-title {
+    font-size: 24pt;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    display: flex;
+    justify-items: flex-start;
+    align-items: center;
+}
+
+.nav-links li{
+    margin: 10px;
+    justify-content: flex-start;
+}
+
+.nav-links p, .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+
+a.active {
+    font-weight: bold;
+}
+
+.sign-out {
+    color: white;
+    background-color: steelblue;
+    padding: 3px 10px;
+}
+
+.banner-main {
+    background-color: steelblue;
+    height: 80px;
+    margin-bottom: 40px;
+}
+
+.banner-minor {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: white;
+}
+
+.card {
+    border: 2px solid gray;
+    margin: 10px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.card > :not(.banner-minor, .banner-main) {
+    display: flex;
+    padding: 10px;
+    justify-items: center;
+}
+
+.counter {
+    background-color: grey;
+    color: black;
+    border-radius: 50%;
+    height: fit-content;
+    width: fit-content;
+    padding: 2px 8px;
+    margin-right: 10px;
+}
+
+.connection-request {
+    display: flex;
+    justify-content: space-between;
+}
+
+.connection-image {
+    height: 20pt;
+}
+
+.connection {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.connection * {
+    margin-right: 10px;
+}
+
+.connection-disposition a img {
+    height: 20pt;
+}
+.column {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-3 {
+    flex: 3;
+}
+.flex-2 {
+    flex: 2;
+}
+
+.profile {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: fit-content;
+}
+
+.profile-image{
+    height: 80px;
+    width: 80px;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+#profile-card {
+    height: fit-contents;
+}
+
+.profile > * {
+    margin: 5px;
+}
+
+.profile-city {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.profile-city img {
+    height: 12pt;
+}
+
+.profile-edit {
+    display: flex;
+    align-items: center;
+}
+
+.profile-edit img {
+    height: 12pt;
+}
+
+.education-line-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#view-more {
+    border-top: 2px solid gray;
+}
+
+p.definition_word {
+    font-size: 25pt;
+}
