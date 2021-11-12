@@ -1,0 +1,32 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding: 20px;
+}
+
+.card {
+    border: 2px solid black;
+    width: 30%;
+    padding: 10px;
+}
+
+.card > header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:10px;
+}
+
+.post-like-button {
+    color: black;
+    background-color: sandybrown;
+    box-shadow: 3px 3px black;
+    padding: 2px 5px;
+}
