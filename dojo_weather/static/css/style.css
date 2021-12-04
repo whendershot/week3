@@ -1,0 +1,122 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: skyblue;
+    color: white;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#city-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px
+}
+
+#city-list {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+#city-list > a {
+    text-decoration: none;
+    color: white;
+    font-size: 14pt;
+}
+
+main {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul#forecasts {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 150px;
+    height: 250px;
+}
+
+.card > img {
+    height: auto;
+    width: 80%;
+    border-radius: 50%;
+}
+
+.card > * {
+    margin: 10px;
+}
+
+.forecast-temperatures {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.forecast-temperature-high {
+    color: red;
+    font-weight: bold;
+}
+
+.forecast-temperature-low {
+    color: blue;
+    font-weight: bold;
+}
+
+
+#cookie-banner {
+    width: 90%;
+    display: flex;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding: 5px 10px;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid black;
+}
+
+#cookie-banner > div {
+    width: 80%;
+}
+
+#cookie-banner > button {
+    padding: 3px 10px;
+    border: 2px solid black;
+    box-shadow: 2px 2px black;
+    color: black;
+    background-color: lightskyblue;
+}
